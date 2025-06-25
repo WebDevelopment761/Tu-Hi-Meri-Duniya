@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(#ffdee9, #b5fffc);
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  margin: 100px auto;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  z-index: 10;
+  position: relative;
+}
+
+h1, h2, p {
+  color: #e91e63;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#yesBtn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#noBtn {
+  background-color: #f44336;
+  color: white;
+  position: relative;
+}
+
+.heart {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 100%;
+  font-size: 24px;
+  opacity: 0.6;
+  animation: floatUp 10s linear infinite;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.proposal-text {
+  font-size: 18px;
+  color: #d81b60;
+  margin-top: 20px;
+  white-space: pre-wrap;
+}
