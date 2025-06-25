@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Will You Be Mine?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Dear You,</h1>
+    
+    <div class="proposal-text">
+      <p id="typewriter"></p>
+    </div>
+
+    <h2>💖 Will You Be Mine? 💖</h2>
+
+    <div class="buttons">
+      <button id="yesBtn">Yes, forever 💍</button>
+      <button id="noBtn">Let me think 😅</button>
+    </div>
+
+    <p id="response"></p>
+  </div>
+
+  <!-- Romantic music -->
+<audio id="bgMusic" loop autoplay>
+  <source src="Apna Bana Le - (Raag.Fm).mp3" type="audio/mpeg">
+  Your browser does not support the audio tag.
+</audio>
+
+
+
+
+  <!-- Floating hearts -->
+  <script>
+    for (let i = 0; i < 30; i++) {
+      let heart = document.createElement('div');
+      heart.className = 'heart';
+      const symbols = ['❤️', '💕', '💖', '🌸'];
+      heart.innerHTML = symbols[Math.floor(Math.random() * symbols.length)];
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = 5 + Math.random() * 5 + 's';
+      document.body.appendChild(heart);
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
